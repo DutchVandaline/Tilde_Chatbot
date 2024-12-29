@@ -1,0 +1,178 @@
+2024-12-28 16:38:19.418 KST [19308] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-28 16:38:19.419 KST [19308] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-28 16:38:19.419 KST [19308] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-28 16:38:19.439 KST [3048] LOG:  database system was shut down at 2024-12-28 16:36:38 KST
+2024-12-28 16:38:19.448 KST [19308] LOG:  database system is ready to accept connections
+2024-12-28 16:39:01.450 KST [20620] FATAL:  role "d519" does not exist
+2024-12-28 16:39:32.068 KST [19308] LOG:  received fast shutdown request
+2024-12-28 16:39:32.072 KST [19308] LOG:  aborting any active transactions
+2024-12-28 16:39:32.075 KST [19308] LOG:  background worker "logical replication launcher" (PID 9052) exited with exit code 1
+2024-12-28 16:39:32.075 KST [5512] LOG:  shutting down
+2024-12-28 16:39:32.077 KST [5512] LOG:  checkpoint starting: shutdown immediate
+2024-12-28 16:39:32.103 KST [5512] LOG:  checkpoint complete: wrote 44 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.017 s, total=0.028 s; sync files=11, longest=0.002 s, average=0.002 s; distance=250 kB, estimate=250 kB; lsn=0/1542A18, redo lsn=0/1542A18
+2024-12-28 16:39:32.108 KST [19308] LOG:  database system is shut down
+2024-12-28 16:52:46.822 KST [17888] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-28 16:52:46.824 KST [17888] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-28 16:52:46.824 KST [17888] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-28 16:52:46.845 KST [7428] LOG:  database system was shut down at 2024-12-28 16:52:17 KST
+2024-12-28 16:52:46.854 KST [17888] LOG:  database system is ready to accept connections
+2024-12-28 16:53:15.569 KST [9936] FATAL:  role "d519" does not exist
+2024-12-28 16:53:37.671 KST [9648] FATAL:  role "postgres" does not exist
+2024-12-28 16:56:04.211 KST [17888] LOG:  background worker "logical replication launcher" (PID 19604) was terminated by exception 0xC000013A
+2024-12-28 16:56:04.211 KST [17888] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-28 16:56:04.211 KST [17888] LOG:  terminating any other active server processes
+2024-12-28 16:56:04.215 KST [17888] LOG:  all server processes terminated; reinitializing
+2024-12-28 16:56:04.215 KST [17888] LOG:  could not open directory "base": No such file or directory
+2024-12-28 16:56:04.215 KST [17888] LOG:  could not open directory "pg_tblspc": No such file or directory
+2024-12-28 16:56:04.216 KST [17888] PANIC:  could not open file "global/pg_control": No such file or directory
+2024-12-28 16:57:46.392 KST [8304] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-28 16:57:46.393 KST [8304] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-28 16:57:46.394 KST [8304] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-28 16:57:46.415 KST [2960] LOG:  database system was shut down at 2024-12-28 16:56:39 KST
+2024-12-28 16:57:46.424 KST [8304] LOG:  database system is ready to accept connections
+2024-12-28 16:59:53.952 KST [15720] FATAL:  password authentication failed for user "d519"
+2024-12-28 16:59:53.952 KST [15720] DETAIL:  Role "d519" does not exist.
+	Connection matched file "C:/junha/Tilde_Chatbot/pgdata/pg_hba.conf" line 117: "host    all             all             ::1/128                 md5"
+2024-12-28 17:00:50.434 KST [3476] ERROR:  role "d519" already exists
+2024-12-28 17:00:50.434 KST [3476] STATEMENT:  CREATE ROLE d519 WITH LOGIN PASSWORD 'd519';
+2024-12-28 17:00:54.119 KST [14416] FATAL:  database "TildeChatBotDB" does not exist
+2024-12-28 17:00:56.332 KST [19688] FATAL:  database "TildeChatBotDB" does not exist
+2024-12-28 17:01:26.375 KST [3608] FATAL:  database "TildeChatBotDB" does not exist
+2024-12-28 17:02:03.108 KST [3476] ERROR:  syntax error at or near "CREATE" at character 32
+2024-12-28 17:02:03.108 KST [3476] STATEMENT:  CREATE DATABASE TildeChatBotDB
+	CREATE DATABASE TildeChatBotDB
+	CREATE DATABASE TildeChatBotDB;
+2024-12-28 17:02:35.049 KST [11616] FATAL:  database "TildeChatBotDB" does not exist
+2024-12-28 17:02:46.415 KST [7632] LOG:  checkpoint starting: time
+2024-12-28 17:02:55.010 KST [13724] FATAL:  database "TildeChatBotDB" does not exist
+2024-12-28 17:04:30.556 KST [7632] LOG:  checkpoint complete: wrote 987 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=103.738 s, sync=0.393 s, total=104.141 s; sync files=314, longest=0.006 s, average=0.002 s; distance=4612 kB, estimate=4612 kB; lsn=0/1985FC8, redo lsn=0/1985F90
+2024-12-28 17:11:38.978 KST [3920] ERROR:  permission denied for schema public at character 28
+2024-12-28 17:11:38.978 KST [3920] STATEMENT:  CREATE TABLE IF NOT EXISTS ChatTable ("Data_no" TEXT, "구분" TEXT, "데이터제공" TEXT, "임상과" TEXT, "제목" TEXT, "질문원본" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출성분명" TEXT, "노출부위" TEXT, "노출내용" TEXT, "노출시간" TEXT, "노출후증상" TEXT, "몸무게" TEXT, "노출용량" TEXT, "노출후응급처치" TEXT, "답변원본" TEXT, "답변수정" TEXT, "답변생성1" TEXT, "Date" TEXT, "Doctor" TEXT)
+2024-12-28 17:13:06.262 KST [2732] ERROR:  permission denied for schema public at character 28
+2024-12-28 17:13:06.262 KST [2732] STATEMENT:  CREATE TABLE IF NOT EXISTS ChatTable ("Data_no" TEXT, "구분" TEXT, "데이터제공" TEXT, "임상과" TEXT, "제목" TEXT, "질문원본" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출성분명" TEXT, "노출부위" TEXT, "노출내용" TEXT, "노출시간" TEXT, "노출후증상" TEXT, "몸무게" TEXT, "노출용량" TEXT, "노출후응급처치" TEXT, "답변원본" TEXT, "답변수정" TEXT, "답변생성1" TEXT, "Date" TEXT, "Doctor" TEXT)
+2024-12-28 17:13:25.917 KST [21012] ERROR:  permission denied for schema public at character 28
+2024-12-28 17:13:25.917 KST [21012] STATEMENT:  CREATE TABLE IF NOT EXISTS ChatTable ("Data_no" TEXT, "구분" TEXT, "데이터제공" TEXT, "임상과" TEXT, "제목" TEXT, "질문원본" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출성분명" TEXT, "노출부위" TEXT, "노출내용" TEXT, "노출시간" TEXT, "노출후증상" TEXT, "몸무게" TEXT, "노출용량" TEXT, "노출후응급처치" TEXT, "답변원본" TEXT, "답변수정" TEXT, "답변생성1" TEXT, "Date" TEXT, "Doctor" TEXT)
+2024-12-28 17:13:43.235 KST [21012] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-12-28 17:13:43.235 KST [2732] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-12-28 17:13:43.411 KST [8304] LOG:  server process (PID 2924) was terminated by exception 0xC000013A
+2024-12-28 17:13:43.411 KST [8304] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-28 17:13:43.411 KST [8304] LOG:  terminating any other active server processes
+2024-12-28 17:13:43.415 KST [8304] LOG:  all server processes terminated; reinitializing
+2024-12-28 17:13:43.427 KST [8304] LOG:  startup process (PID 7472) was terminated by exception 0xC0000142
+2024-12-28 17:13:43.427 KST [8304] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-28 17:13:43.427 KST [8304] LOG:  aborting startup due to startup process failure
+2024-12-28 17:13:43.428 KST [8304] LOG:  database system is shut down
+2024-12-28 17:14:48.249 KST [19276] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-28 17:14:48.251 KST [19276] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-28 17:14:48.251 KST [19276] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-28 17:14:48.271 KST [3848] LOG:  database system was interrupted; last known up at 2024-12-28 17:04:30 KST
+2024-12-28 17:14:49.048 KST [3848] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-12-28 17:14:49.051 KST [3848] LOG:  redo starts at 0/1985F90
+2024-12-28 17:14:49.051 KST [3848] LOG:  invalid record length at 0/1986750: expected at least 24, got 0
+2024-12-28 17:14:49.051 KST [3848] LOG:  redo done at 0/1986718 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-12-28 17:14:49.054 KST [3816] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-12-28 17:14:49.073 KST [3816] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.009 s, total=0.021 s; sync files=6, longest=0.002 s, average=0.002 s; distance=1 kB, estimate=1 kB; lsn=0/1986750, redo lsn=0/1986750
+2024-12-28 17:14:49.082 KST [19276] LOG:  database system is ready to accept connections
+2024-12-28 17:15:27.558 KST [18180] ERROR:  permission denied for schema public at character 28
+2024-12-28 17:15:27.558 KST [18180] STATEMENT:  CREATE TABLE IF NOT EXISTS ChatTable ("Data_no" TEXT, "구분" TEXT, "데이터제공" TEXT, "임상과" TEXT, "제목" TEXT, "질문원본" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출성분명" TEXT, "노출부위" TEXT, "노출내용" TEXT, "노출시간" TEXT, "노출후증상" TEXT, "몸무게" TEXT, "노출용량" TEXT, "노출후응급처치" TEXT, "답변원본" TEXT, "답변수정" TEXT, "답변생성1" TEXT, "Date" TEXT, "Doctor" TEXT)
+2024-12-28 17:16:17.624 KST [19572] FATAL:  password authentication failed for user "postgres"
+2024-12-28 17:16:17.624 KST [19572] DETAIL:  Password does not match for user "postgres".
+	Connection matched file "C:/junha/Tilde_Chatbot/pgdata/pg_hba.conf" line 117: "host    all             all             ::1/128                 md5"
+2024-12-28 17:16:28.136 KST [8996] FATAL:  password authentication failed for user "postgres"
+2024-12-28 17:16:28.136 KST [8996] DETAIL:  Password does not match for user "postgres".
+	Connection matched file "C:/junha/Tilde_Chatbot/pgdata/pg_hba.conf" line 117: "host    all             all             ::1/128                 md5"
+2024-12-28 17:17:09.936 KST [5736] FATAL:  password authentication failed for user "d519"
+2024-12-28 17:17:09.936 KST [5736] DETAIL:  Password does not match for user "d519".
+	Connection matched file "C:/junha/Tilde_Chatbot/pgdata/pg_hba.conf" line 117: "host    all             all             ::1/128                 md5"
+2024-12-28 17:17:19.515 KST [19676] FATAL:  password authentication failed for user "postgres"
+2024-12-28 17:17:19.515 KST [19676] DETAIL:  Password does not match for user "postgres".
+	Connection matched file "C:/junha/Tilde_Chatbot/pgdata/pg_hba.conf" line 117: "host    all             all             ::1/128                 md5"
+2024-12-28 17:18:06.532 KST [19276] LOG:  received fast shutdown request
+2024-12-28 17:18:06.536 KST [19276] LOG:  aborting any active transactions
+2024-12-28 17:18:06.537 KST [18180] FATAL:  terminating connection due to administrator command
+2024-12-28 17:18:06.539 KST [19276] LOG:  background worker "logical replication launcher" (PID 15660) exited with exit code 1
+2024-12-28 17:18:06.540 KST [3816] LOG:  shutting down
+2024-12-28 17:18:06.542 KST [3816] LOG:  checkpoint starting: shutdown immediate
+2024-12-28 17:18:06.552 KST [3816] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.002 s, total=0.012 s; sync files=1, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=1 kB; lsn=0/1986800, redo lsn=0/1986800
+2024-12-28 17:18:06.557 KST [19276] LOG:  database system is shut down
+2024-12-28 17:18:06.724 KST [19856] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-28 17:18:06.725 KST [19856] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-28 17:18:06.725 KST [19856] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-28 17:18:06.746 KST [3184] LOG:  database system was shut down at 2024-12-28 17:18:06 KST
+2024-12-28 17:18:06.755 KST [19856] LOG:  database system is ready to accept connections
+2024-12-28 17:18:13.119 KST [3272] FATAL:  password authentication failed for user "postgres"
+2024-12-28 17:18:13.119 KST [3272] DETAIL:  Password does not match for user "postgres".
+	Connection matched file "C:/junha/Tilde_Chatbot/pgdata/pg_hba.conf" line 117: "host    all             all             ::1/128                 md5"
+2024-12-28 17:20:00.158 KST [19856] LOG:  received fast shutdown request
+2024-12-28 17:20:00.170 KST [19856] LOG:  aborting any active transactions
+2024-12-28 17:20:00.173 KST [19856] LOG:  background worker "logical replication launcher" (PID 19120) exited with exit code 1
+2024-12-28 17:20:00.173 KST [20380] LOG:  shutting down
+2024-12-28 17:20:00.175 KST [20380] LOG:  checkpoint starting: shutdown immediate
+2024-12-28 17:20:00.187 KST [20380] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.003 s, total=0.014 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/19868B0, redo lsn=0/19868B0
+2024-12-28 17:20:00.191 KST [19856] LOG:  database system is shut down
+2024-12-28 17:20:00.349 KST [14204] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-28 17:20:00.350 KST [14204] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-28 17:20:00.350 KST [14204] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-28 17:20:00.372 KST [10168] LOG:  database system was shut down at 2024-12-28 17:20:00 KST
+2024-12-28 17:20:00.381 KST [14204] LOG:  database system is ready to accept connections
+2024-12-28 17:20:28.257 KST [18620] ERROR:  syntax error at or near "ALTER" at character 42
+2024-12-28 17:20:28.257 KST [18620] STATEMENT:  ALTER USER postgres with password 'd519'
+	ALTER USER postgres with password 'd519';
+2024-12-28 17:21:04.324 KST [14204] LOG:  received fast shutdown request
+2024-12-28 17:21:04.336 KST [14204] LOG:  aborting any active transactions
+2024-12-28 17:21:04.339 KST [14204] LOG:  background worker "logical replication launcher" (PID 7248) exited with exit code 1
+2024-12-28 17:21:04.339 KST [18456] LOG:  shutting down
+2024-12-28 17:21:04.341 KST [18456] LOG:  checkpoint starting: shutdown immediate
+2024-12-28 17:21:04.355 KST [18456] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.005 s, total=0.016 s; sync files=3, longest=0.002 s, average=0.002 s; distance=2 kB, estimate=2 kB; lsn=0/1987280, redo lsn=0/1987280
+2024-12-28 17:21:04.359 KST [14204] LOG:  database system is shut down
+2024-12-28 17:21:04.514 KST [13692] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-28 17:21:04.515 KST [13692] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-28 17:21:04.515 KST [13692] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-28 17:21:04.536 KST [12744] LOG:  database system was shut down at 2024-12-28 17:21:04 KST
+2024-12-28 17:21:04.545 KST [13692] LOG:  database system is ready to accept connections
+2024-12-28 17:21:29.843 KST [13388] ERROR:  permission denied for schema public at character 28
+2024-12-28 17:21:29.843 KST [13388] STATEMENT:  CREATE TABLE IF NOT EXISTS ChatTable ("Data_no" TEXT, "구분" TEXT, "데이터제공" TEXT, "임상과" TEXT, "제목" TEXT, "질문원본" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출성분명" TEXT, "노출부위" TEXT, "노출내용" TEXT, "노출시간" TEXT, "노출후증상" TEXT, "몸무게" TEXT, "노출용량" TEXT, "노출후응급처치" TEXT, "답변원본" TEXT, "답변수정" TEXT, "답변생성1" TEXT, "Date" TEXT, "Doctor" TEXT)
+2024-12-28 17:21:42.338 KST [9496] ERROR:  permission denied for schema public at character 28
+2024-12-28 17:21:42.338 KST [9496] STATEMENT:  CREATE TABLE IF NOT EXISTS chattable ("Data_no" TEXT, "구분" TEXT, "데이터제공" TEXT, "임상과" TEXT, "제목" TEXT, "질문원본" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출성분명" TEXT, "노출부위" TEXT, "노출내용" TEXT, "노출시간" TEXT, "노출후증상" TEXT, "몸무게" TEXT, "노출용량" TEXT, "노출후응급처치" TEXT, "답변원본" TEXT, "답변수정" TEXT, "답변생성1" TEXT, "Date" TEXT, "Doctor" TEXT)
+2024-12-28 17:22:49.538 KST [7416] ERROR:  permission denied for schema public at character 28
+2024-12-28 17:22:49.538 KST [7416] STATEMENT:  CREATE TABLE IF NOT EXISTS ChatTable ("Data_no" TEXT, "구분" TEXT, "데이터제공" TEXT, "임상과" TEXT, "제목" TEXT, "질문원본" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출성분명" TEXT, "노출부위" TEXT, "노출내용" TEXT, "노출시간" TEXT, "노출후증상" TEXT, "몸무게" TEXT, "노출용량" TEXT, "노출후응급처치" TEXT, "답변원본" TEXT, "답변수정" TEXT, "답변생성1" TEXT, "Date" TEXT, "Doctor" TEXT)
+2024-12-28 17:24:25.586 KST [6516] ERROR:  permission denied for schema public at character 28
+2024-12-28 17:24:25.586 KST [6516] STATEMENT:  CREATE TABLE IF NOT EXISTS ChatTable ("Data_no" TEXT, "구분" TEXT, "데이터제공" TEXT, "임상과" TEXT, "제목" TEXT, "질문원본" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출성분명" TEXT, "노출부위" TEXT, "노출내용" TEXT, "노출시간" TEXT, "노출후증상" TEXT, "몸무게" TEXT, "노출용량" TEXT, "노출후응급처치" TEXT, "답변원본" TEXT, "답변수정" TEXT, "답변생성1" TEXT, "Date" TEXT, "Doctor" TEXT)
+2024-12-28 17:24:37.630 KST [6516] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-12-28 17:24:37.630 KST [7416] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-12-28 17:24:37.808 KST [13692] LOG:  server process (PID 19304) was terminated by exception 0xC000013A
+2024-12-28 17:24:37.808 KST [13692] DETAIL:  Failed process was running: SELECT n.nspname AS "Name",
+	  pg_catalog.pg_get_userbyid(n.nspowner) AS "Owner",
+	  pg_catalog.array_to_string(n.nspacl, E'\n') AS "Access privileges",
+	  pg_catalog.obj_description(n.oid, 'pg_namespace') AS "Description"
+	FROM pg_catalog.pg_namespace n
+	WHERE n.nspname !~ '^pg_' AND n.nspname <> 'information_schema'
+	ORDER BY 1;
+2024-12-28 17:24:37.808 KST [13692] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-28 17:24:37.808 KST [13692] LOG:  terminating any other active server processes
+2024-12-28 17:24:37.812 KST [13692] LOG:  all server processes terminated; reinitializing
+2024-12-28 17:24:37.825 KST [13692] LOG:  startup process (PID 6448) was terminated by exception 0xC0000142
+2024-12-28 17:24:37.825 KST [13692] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-28 17:24:37.825 KST [13692] LOG:  aborting startup due to startup process failure
+2024-12-28 17:24:37.826 KST [13692] LOG:  database system is shut down
+2024-12-29 10:52:02.560 KST [16332] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-29 10:52:02.561 KST [16332] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-29 10:52:02.561 KST [16332] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-29 10:52:02.582 KST [4276] LOG:  database system was interrupted; last known up at 2024-12-28 17:21:04 KST
+2024-12-29 10:52:03.629 KST [4276] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-12-29 10:52:03.634 KST [4276] LOG:  redo starts at 0/19872F8
+2024-12-29 10:52:03.635 KST [4276] LOG:  invalid record length at 0/1988088: expected at least 24, got 0
+2024-12-29 10:52:03.635 KST [4276] LOG:  redo done at 0/1988050 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-12-29 10:52:03.639 KST [11680] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-12-29 10:52:03.662 KST [11680] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.012 s, total=0.025 s; sync files=8, longest=0.002 s, average=0.002 s; distance=3 kB, estimate=3 kB; lsn=0/1988088, redo lsn=0/1988088
+2024-12-29 10:52:03.671 KST [16332] LOG:  database system is ready to accept connections
+2024-12-29 10:52:15.383 KST [16868] ERROR:  permission denied for schema public at character 28
+2024-12-29 10:52:15.383 KST [16868] STATEMENT:  CREATE TABLE IF NOT EXISTS ChatTable ("Data_no" TEXT, "구분" TEXT, "데이터제공" TEXT, "임상과" TEXT, "제목" TEXT, "질문원본" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출성분명" TEXT, "노출부위" TEXT, "노출내용" TEXT, "노출시간" TEXT, "노출후증상" TEXT, "몸무게" TEXT, "노출용량" TEXT, "노출후응급처치" TEXT, "답변원본" TEXT, "답변수정" TEXT, "답변생성1" TEXT, "Date" TEXT, "Doctor" TEXT)
+2024-12-29 10:54:55.061 KST [6412] ERROR:  relation "tildechatbotdb" does not exist at character 15
+2024-12-29 10:54:55.061 KST [6412] STATEMENT:  SELECT * FROM tildechatbotdb
+2024-12-29 10:57:03.671 KST [11680] LOG:  checkpoint starting: time
+2024-12-29 10:58:32.814 KST [11680] LOG:  checkpoint complete: wrote 849 buffers (5.2%); 1 WAL file(s) added, 0 removed, 0 recycled; write=89.039 s, sync=0.064 s, total=89.143 s; sync files=44, longest=0.003 s, average=0.002 s; distance=6435 kB, estimate=6435 kB; lsn=0/1FD0D60, redo lsn=0/1FD0D28
