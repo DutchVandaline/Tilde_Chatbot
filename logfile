@@ -176,3 +176,44 @@
 2024-12-29 10:54:55.061 KST [6412] STATEMENT:  SELECT * FROM tildechatbotdb
 2024-12-29 10:57:03.671 KST [11680] LOG:  checkpoint starting: time
 2024-12-29 10:58:32.814 KST [11680] LOG:  checkpoint complete: wrote 849 buffers (5.2%); 1 WAL file(s) added, 0 removed, 0 recycled; write=89.039 s, sync=0.064 s, total=89.143 s; sync files=44, longest=0.003 s, average=0.002 s; distance=6435 kB, estimate=6435 kB; lsn=0/1FD0D60, redo lsn=0/1FD0D28
+2024-12-29 11:39:43.806 KST [16868] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-12-29 11:39:44.023 KST [16332] LOG:  server process (PID 17092) was terminated by exception 0xC000013A
+2024-12-29 11:39:44.023 KST [16332] DETAIL:  Failed process was running: SELECT
+	  d.datname as "Name",
+	  pg_catalog.pg_get_userbyid(d.datdba) as "Owner",
+	  pg_catalog.pg_encoding_to_char(d.encoding) as "Encoding",
+	  CASE d.datlocprovider WHEN 'c' THEN 'libc' WHEN 'i' THEN 'icu' END AS "Locale Provider",
+	  d.datcollate as "Collate",
+	  d.datctype as "Ctype",
+	  d.daticulocale as "ICU Locale",
+	  d.daticurules as "ICU Rules",
+	  pg_catalog.array_to_string(d.datacl, E'\n') AS "Access privileges"
+	FROM pg_catalog.pg_database d
+	ORDER BY 1;
+2024-12-29 11:39:44.023 KST [16332] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-29 11:39:44.023 KST [16332] LOG:  terminating any other active server processes
+2024-12-29 11:39:44.027 KST [16332] LOG:  all server processes terminated; reinitializing
+2024-12-29 11:39:44.037 KST [16332] LOG:  startup process (PID 16028) was terminated by exception 0xC0000142
+2024-12-29 11:39:44.037 KST [16332] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-29 11:39:44.037 KST [16332] LOG:  aborting startup due to startup process failure
+2024-12-29 11:39:44.038 KST [16332] LOG:  database system is shut down
+2024-12-29 12:14:40.474 KST [13376] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-29 12:14:40.476 KST [13376] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-29 12:14:40.476 KST [13376] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-29 12:14:40.498 KST [21012] LOG:  database system was interrupted; last known up at 2024-12-29 10:58:32 KST
+2024-12-29 12:14:41.325 KST [21012] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-12-29 12:14:41.330 KST [21012] LOG:  redo starts at 0/1FD0D28
+2024-12-29 12:14:41.330 KST [21012] LOG:  invalid record length at 0/1FD0E10: expected at least 24, got 0
+2024-12-29 12:14:41.330 KST [21012] LOG:  redo done at 0/1FD0DD8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-12-29 12:14:41.334 KST [9748] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-12-29 12:14:41.347 KST [9748] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.004 s, total=0.016 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1FD0E10, redo lsn=0/1FD0E10
+2024-12-29 12:14:41.356 KST [13376] LOG:  database system is ready to accept connections
+2024-12-29 12:18:38.573 KST [13376] LOG:  background worker "logical replication launcher" (PID 18328) was terminated by exception 0xC000013A
+2024-12-29 12:18:38.573 KST [13376] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-29 12:18:38.573 KST [13376] LOG:  terminating any other active server processes
+2024-12-29 12:18:38.576 KST [13376] LOG:  all server processes terminated; reinitializing
+2024-12-29 12:18:38.586 KST [13376] LOG:  startup process (PID 16008) was terminated by exception 0xC0000142
+2024-12-29 12:18:38.586 KST [13376] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-29 12:18:38.586 KST [13376] LOG:  aborting startup due to startup process failure
+2024-12-29 12:18:38.587 KST [13376] LOG:  database system is shut down
