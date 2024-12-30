@@ -217,3 +217,53 @@
 2024-12-29 12:18:38.586 KST [13376] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
 2024-12-29 12:18:38.586 KST [13376] LOG:  aborting startup due to startup process failure
 2024-12-29 12:18:38.587 KST [13376] LOG:  database system is shut down
+2024-12-30 12:56:09.498 KST [1076] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-30 12:56:09.499 KST [1076] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-30 12:56:09.499 KST [1076] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-30 12:56:09.525 KST [3236] LOG:  database system was interrupted; last known up at 2024-12-29 12:14:41 KST
+2024-12-30 12:56:10.568 KST [3236] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-12-30 12:56:10.571 KST [3236] LOG:  redo starts at 0/1FD0E88
+2024-12-30 12:56:10.571 KST [3236] LOG:  invalid record length at 0/1FD0EC0: expected at least 24, got 0
+2024-12-30 12:56:10.571 KST [3236] LOG:  redo done at 0/1FD0E88 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-12-30 12:56:10.575 KST [9448] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-12-30 12:56:10.589 KST [9448] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.004 s, total=0.016 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1FD0EC0, redo lsn=0/1FD0EC0
+2024-12-30 12:56:10.597 KST [1076] LOG:  database system is ready to accept connections
+2024-12-30 13:24:16.185 KST [1076] LOG:  background worker "logical replication launcher" (PID 13124) was terminated by exception 0xC000013A
+2024-12-30 13:24:16.185 KST [1076] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-30 13:24:16.185 KST [1076] LOG:  terminating any other active server processes
+2024-12-30 13:24:16.189 KST [1076] LOG:  all server processes terminated; reinitializing
+2024-12-30 13:24:16.201 KST [1076] LOG:  startup process (PID 17960) was terminated by exception 0xC0000142
+2024-12-30 13:24:16.201 KST [1076] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-30 13:24:16.201 KST [1076] LOG:  aborting startup due to startup process failure
+2024-12-30 13:24:16.202 KST [1076] LOG:  database system is shut down
+2024-12-30 13:42:08.766 KST [3220] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2024-12-30 13:42:08.767 KST [3220] LOG:  listening on IPv6 address "::1", port 5432
+2024-12-30 13:42:08.767 KST [3220] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-12-30 13:42:08.790 KST [16936] LOG:  database system was interrupted; last known up at 2024-12-30 12:56:10 KST
+2024-12-30 13:42:09.668 KST [16936] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-12-30 13:42:09.671 KST [16936] LOG:  redo starts at 0/1FD0F38
+2024-12-30 13:42:09.671 KST [16936] LOG:  invalid record length at 0/1FD0F70: expected at least 24, got 0
+2024-12-30 13:42:09.671 KST [16936] LOG:  redo done at 0/1FD0F38 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-12-30 13:42:09.673 KST [7840] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-12-30 13:42:09.686 KST [7840] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.004 s, total=0.014 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1FD0F70, redo lsn=0/1FD0F70
+2024-12-30 13:42:09.694 KST [3220] LOG:  database system is ready to accept connections
+2024-12-30 13:59:27.279 KST [20404] ERROR:  relation "users" does not exist at character 27
+2024-12-30 13:59:27.279 KST [20404] STATEMENT:  SELECT DISTINCT city FROM users;
+2024-12-30 14:00:16.283 KST [21392] ERROR:  relation "질문수정" does not exist at character 32
+2024-12-30 14:00:16.283 KST [21392] STATEMENT:  SELECT DISTINCT ChatTable FROM 질문수정;
+2024-12-30 14:42:09.763 KST [7840] LOG:  checkpoint starting: time
+2024-12-30 14:42:09.887 KST [7840] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.112 s, sync=0.002 s, total=0.125 s; sync files=1, longest=0.002 s, average=0.002 s; distance=3 kB, estimate=3 kB; lsn=0/1FD1E28, redo lsn=0/1FD1DF0
+2024-12-30 14:44:12.149 KST [10552] ERROR:  unterminated quoted string at or near "';" at character 61
+2024-12-30 14:44:12.149 KST [10552] STATEMENT:  SELECT 노출제품명 FROM information_schema.columns WHERE ChatTable';
+2024-12-30 14:44:19.341 KST [21304] ERROR:  unterminated quoted string at or near "'" at character 61
+2024-12-30 14:44:19.341 KST [21304] STATEMENT:  SELECT 노출제품명 FROM information_schema.columns WHERE ChatTable'
+2024-12-30 14:44:33.645 KST [15140] ERROR:  column "노출제품명" does not exist at character 8
+2024-12-30 14:44:33.645 KST [15140] STATEMENT:  SELECT 노출제품명 FROM information_schema.columns WHERE ChatTable
+2024-12-30 14:45:33.754 KST [21020] ERROR:  column "chattable" does not exist at character 48
+2024-12-30 14:45:33.754 KST [21020] STATEMENT:  SELECT * FROM information_schema.columns WHERE ChatTable
+2024-12-30 14:45:46.014 KST [10984] ERROR:  column "chattable" does not exist at character 61
+2024-12-30 14:45:46.014 KST [10984] STATEMENT:  SELECT * FROM information_schema.columns WHERE table_name = ChatTable
+2024-12-30 14:46:00.658 KST [860] ERROR:  unterminated quoted string at or near "'ChatTable" at character 61
+2024-12-30 14:46:00.658 KST [860] STATEMENT:  SELECT * FROM information_schema.columns WHERE table_name = 'ChatTable
+2024-12-30 14:46:21.517 KST [1784] ERROR:  relation "information_schema" does not exist at character 25
+2024-12-30 14:46:21.517 KST [1784] STATEMENT:  SELECT column_name FROM information_schema WHERE table_name = 'ChatTable'
