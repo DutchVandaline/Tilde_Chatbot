@@ -267,3 +267,5 @@
 2024-12-30 14:46:00.658 KST [860] STATEMENT:  SELECT * FROM information_schema.columns WHERE table_name = 'ChatTable
 2024-12-30 14:46:21.517 KST [1784] ERROR:  relation "information_schema" does not exist at character 25
 2024-12-30 14:46:21.517 KST [1784] STATEMENT:  SELECT column_name FROM information_schema WHERE table_name = 'ChatTable'
+2024-12-30 15:00:45.437 KST [10064] ERROR:  column "유독가스" does not exist at character 42
+2024-12-30 15:00:45.437 KST [10064] STATEMENT:  SELECT * FROM ChatTable where 노출제품명 like 유독가스
