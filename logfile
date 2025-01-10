@@ -269,3 +269,60 @@
 2024-12-30 14:46:21.517 KST [1784] STATEMENT:  SELECT column_name FROM information_schema WHERE table_name = 'ChatTable'
 2024-12-30 15:00:45.437 KST [10064] ERROR:  column "유독가스" does not exist at character 42
 2024-12-30 15:00:45.437 KST [10064] STATEMENT:  SELECT * FROM ChatTable where 노출제품명 like 유독가스
+2024-12-30 17:25:41.795 KST [3220] LOG:  background worker "logical replication launcher" (PID 15916) was terminated by exception 0xC000013A
+2024-12-30 17:25:41.795 KST [3220] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-30 17:25:41.795 KST [3220] LOG:  terminating any other active server processes
+2024-12-30 17:25:41.798 KST [3220] LOG:  all server processes terminated; reinitializing
+2024-12-30 17:25:41.811 KST [3220] LOG:  startup process (PID 20008) was terminated by exception 0xC0000142
+2024-12-30 17:25:41.811 KST [3220] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2024-12-30 17:25:41.811 KST [3220] LOG:  aborting startup due to startup process failure
+2024-12-30 17:25:41.812 KST [3220] LOG:  database system is shut down
+2025-01-02 15:05:18.406 KST [14864] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2025-01-02 15:05:18.408 KST [14864] LOG:  listening on IPv6 address "::1", port 5432
+2025-01-02 15:05:18.408 KST [14864] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-01-02 15:05:18.430 KST [13728] LOG:  database system was interrupted; last known up at 2024-12-30 14:42:09 KST
+2025-01-02 15:05:19.454 KST [13728] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-01-02 15:05:19.457 KST [13728] LOG:  redo starts at 0/1FD1DF0
+2025-01-02 15:05:19.457 KST [13728] LOG:  invalid record length at 0/1FD1ED8: expected at least 24, got 0
+2025-01-02 15:05:19.457 KST [13728] LOG:  redo done at 0/1FD1EA0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-01-02 15:05:19.460 KST [9996] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-01-02 15:05:19.475 KST [9996] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.004 s, total=0.016 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1FD1ED8, redo lsn=0/1FD1ED8
+2025-01-02 15:05:19.483 KST [14864] LOG:  database system is ready to accept connections
+2025-01-02 15:38:13.716 KST [14864] LOG:  background worker "logical replication launcher" (PID 20592) was terminated by exception 0xC000013A
+2025-01-02 15:38:13.716 KST [14864] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-01-02 15:38:13.716 KST [14864] LOG:  terminating any other active server processes
+2025-01-02 15:38:13.719 KST [14864] LOG:  all server processes terminated; reinitializing
+2025-01-02 15:38:13.730 KST [14864] LOG:  startup process (PID 4816) was terminated by exception 0xC0000142
+2025-01-02 15:38:13.730 KST [14864] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-01-02 15:38:13.730 KST [14864] LOG:  aborting startup due to startup process failure
+2025-01-02 15:38:13.731 KST [14864] LOG:  database system is shut down
+2025-01-06 12:53:09.858 KST [1324] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2025-01-06 12:53:09.860 KST [1324] LOG:  listening on IPv6 address "::1", port 5432
+2025-01-06 12:53:09.860 KST [1324] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-01-06 12:53:09.880 KST [19872] LOG:  database system was interrupted; last known up at 2025-01-02 15:05:19 KST
+2025-01-06 12:53:11.052 KST [19872] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-01-06 12:53:11.059 KST [19872] LOG:  redo starts at 0/1FD1F50
+2025-01-06 12:53:11.059 KST [19872] LOG:  invalid record length at 0/1FD1F88: expected at least 24, got 0
+2025-01-06 12:53:11.059 KST [19872] LOG:  redo done at 0/1FD1F50 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-01-06 12:53:11.064 KST [15964] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-01-06 12:53:11.080 KST [15964] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.003 s, total=0.019 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1FD1F88, redo lsn=0/1FD1F88
+2025-01-06 12:53:11.089 KST [1324] LOG:  database system is ready to accept connections
+2025-01-06 14:02:20.107 KST [1324] LOG:  background worker "logical replication launcher" (PID 10128) was terminated by exception 0xC000013A
+2025-01-06 14:02:20.107 KST [1324] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-01-06 14:02:20.108 KST [1324] LOG:  terminating any other active server processes
+2025-01-06 14:02:20.111 KST [1324] LOG:  all server processes terminated; reinitializing
+2025-01-06 14:02:20.123 KST [1324] LOG:  startup process (PID 21320) was terminated by exception 0xC0000142
+2025-01-06 14:02:20.123 KST [1324] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-01-06 14:02:20.123 KST [1324] LOG:  aborting startup due to startup process failure
+2025-01-06 14:02:20.124 KST [1324] LOG:  database system is shut down
+2025-01-10 16:55:00.809 KST [6544] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2025-01-10 16:55:00.811 KST [6544] LOG:  listening on IPv6 address "::1", port 5432
+2025-01-10 16:55:00.811 KST [6544] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-01-10 16:55:00.832 KST [19760] LOG:  database system was interrupted; last known up at 2025-01-06 12:53:11 KST
+2025-01-10 16:55:01.755 KST [19760] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-01-10 16:55:01.759 KST [19760] LOG:  redo starts at 0/1FD2018
+2025-01-10 16:55:01.759 KST [19760] LOG:  invalid record length at 0/1FD2050: expected at least 24, got 0
+2025-01-10 16:55:01.759 KST [19760] LOG:  redo done at 0/1FD2018 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-01-10 16:55:01.763 KST [11256] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-01-10 16:55:01.776 KST [11256] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.003 s, total=0.016 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1FD2050, redo lsn=0/1FD2050
+2025-01-10 16:55:01.785 KST [6544] LOG:  database system is ready to accept connections
