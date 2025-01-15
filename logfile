@@ -326,3 +326,7 @@
 2025-01-10 16:55:01.763 KST [11256] LOG:  checkpoint starting: end-of-recovery immediate wait
 2025-01-10 16:55:01.776 KST [11256] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.003 s, total=0.016 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1FD2050, redo lsn=0/1FD2050
 2025-01-10 16:55:01.785 KST [6544] LOG:  database system is ready to accept connections
+2025-01-10 17:36:39.837 KST [6544] LOG:  background worker "logical replication launcher" (PID 14564) was terminated by exception 0xC000013A
+2025-01-10 17:36:39.837 KST [6544] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-01-10 17:36:39.837 KST [6544] LOG:  terminating any other active server processes
+2025-01-10 17:36:39.839 KST [6544] LOG:  received fast shutdown request

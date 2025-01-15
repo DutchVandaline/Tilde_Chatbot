@@ -29,7 +29,7 @@ class PreprocessedDataset(Dataset):
 
     def __getitem__(self, idx):
         data_item = self.data[idx]
-        data = torch.load(data_item['file_path'])
+        data = torch.load(data_item['file_path'], weights_only=False)
 
         input_ids = data['input_ids']
         attention_mask = data['attention_mask']

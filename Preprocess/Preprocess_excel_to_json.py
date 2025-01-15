@@ -3,6 +3,19 @@ import json
 import os
 from sklearn.model_selection import train_test_split
 
+# 한글 클래스 이름과 영어 태그 매핑
+class_name_mapping = {
+    '독성있는동식물': 'toxic_plants_and_animals',
+    '중독성식품': 'toxic_food',
+    '농약': 'pesticides',
+    '중금속': 'heavy_metals',
+    '의약품': 'pharmaceuticals',
+    '이물질섭취': 'foreign_object_ingestion',
+    '공업용화학제품': 'industrial_chemicals',
+    '생활화학제품': 'household_chemicals',
+    '유해가스': 'harmful_gases'
+}
+
 # 엑셀 파일 읽기
 file_path = 'C:/junha/Datasets/filtered_excel_file.xlsx'
 df = pd.read_excel(file_path)
@@ -15,7 +28,7 @@ df_filtered = df[columns_to_keep]
 df_filtered = df_filtered.sort_values(by='노출제품유형')
 
 # Train, Test 폴더 생성
-output_base_dir = 'C:/junha/Datasets/ChatData_Class/'
+output_base_dir = 'C:/junha/Datasets/ChatData_Processed/'
 train_dir = os.path.join(output_base_dir, 'Train')
 test_dir = os.path.join(output_base_dir, 'Test')
 os.makedirs(train_dir, exist_ok=True)
@@ -29,17 +42,19 @@ for class_name in classes:
     # Train-Test split (8:2 비율)
     train_data, test_data = train_test_split(class_data, test_size=0.2, random_state=42)
 
+    # 영어 태그로 폴더 이름 설정
+    english_class_name = class_name_mapping[class_name]
+
     # 각 class 폴더 생성
-    train_class_dir = os.path.join(train_dir, str(class_name))
-    test_class_dir = os.path.join(test_dir, str(class_name))
+    train_class_dir = os.path.join(train_dir, english_class_name)
+    test_class_dir = os.path.join(test_dir, english_class_name)
     os.makedirs(train_class_dir, exist_ok=True)
     os.makedirs(test_class_dir, exist_ok=True)
 
     # Train 데이터 저장
     for index, row in train_data.iterrows():
         entry = {
-            "modifiedquery": row['질문수정'],
-            "class": row['노출제품유형']
+            "modifiedquery": row['질문수정']
         }
         file_name = os.path.join(train_class_dir, f'row_{index}.json')
         with open(file_name, 'w', encoding='utf-8') as f:
@@ -48,8 +63,7 @@ for class_name in classes:
     # Test 데이터 저장
     for index, row in test_data.iterrows():
         entry = {
-            "modifiedquery": row['질문수정'],
-            "class": row['노출제품유형']
+            "modifiedquery": row['질문수정']
         }
         file_name = os.path.join(test_class_dir, f'row_{index}.json')
         with open(file_name, 'w', encoding='utf-8') as f:
