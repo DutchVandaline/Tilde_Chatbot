@@ -330,3 +330,78 @@
 2025-01-10 17:36:39.837 KST [6544] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
 2025-01-10 17:36:39.837 KST [6544] LOG:  terminating any other active server processes
 2025-01-10 17:36:39.839 KST [6544] LOG:  received fast shutdown request
+2025-02-01 15:08:37.430 KST [20944] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2025-02-01 15:08:37.432 KST [20944] LOG:  listening on IPv6 address "::1", port 5432
+2025-02-01 15:08:37.432 KST [20944] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-02-01 15:08:37.453 KST [14488] LOG:  database system was interrupted; last known up at 2025-01-10 16:55:01 KST
+2025-02-01 15:08:38.268 KST [14488] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-02-01 15:08:38.273 KST [14488] LOG:  redo starts at 0/1FD20C8
+2025-02-01 15:08:38.273 KST [14488] LOG:  invalid record length at 0/1FD2100: expected at least 24, got 0
+2025-02-01 15:08:38.273 KST [14488] LOG:  redo done at 0/1FD20C8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-02-01 15:08:38.276 KST [19980] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-02-01 15:08:38.289 KST [19980] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.003 s, total=0.015 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1FD2100, redo lsn=0/1FD2100
+2025-02-01 15:08:38.299 KST [20944] LOG:  database system is ready to accept connections
+2025-02-01 15:10:09.430 KST [21712] ERROR:  trailing junk after numeric literal at or near "20250123C" at character 28
+2025-02-01 15:10:09.430 KST [21712] STATEMENT:  CREATE TABLE IF NOT EXISTS 20250123ChatTable ("Data_no" TEXT, "질문수정" TEXT, "나이" TEXT, "성별" TEXT, "몸무게" TEXT, "노출제품유형" TEXT, "노출제품명" TEXT, "노출부위 (지금은 참고만 할것)" TEXT, "노출유형 (지금은 참고만 할것)" TEXT)
+2025-02-01 15:13:38.295 KST [19980] LOG:  checkpoint starting: time
+2025-02-01 15:14:05.779 KST [16192] ERROR:  column "노출부위" does not exist at character 17
+2025-02-01 15:14:05.779 KST [16192] HINT:  Perhaps you meant to reference the column "chattable20250123.노출제품명".
+2025-02-01 15:14:05.779 KST [16192] STATEMENT:  SELECT DISTINCT 노출부위 FROM ChatTable20250123;
+2025-02-01 15:14:07.266 KST [19980] LOG:  checkpoint complete: wrote 275 buffers (1.7%); 0 WAL file(s) added, 0 removed, 1 recycled; write=28.901 s, sync=0.050 s, total=28.971 s; sync files=33, longest=0.004 s, average=0.002 s; distance=2029 kB, estimate=2029 kB; lsn=0/21CD648, redo lsn=0/21CD610
+2025-02-01 15:14:22.797 KST [13604] ERROR:  column "노출유형" does not exist at character 17
+2025-02-01 15:14:22.797 KST [13604] HINT:  Perhaps you meant to reference the column "chattable20250123.노출제품유형".
+2025-02-01 15:14:22.797 KST [13604] STATEMENT:  SELECT DISTINCT 노출유형 FROM ChatTable20250123;
+2025-02-01 15:31:40.346 KST [19168] ERROR:  syntax error at or near "참고만" at character 27
+2025-02-01 15:31:40.346 KST [19168] STATEMENT:  SELECT DISTINCT 노출유형 (지금은 참고만 할것) FROM ChatTable20250123;
+2025-02-01 15:34:45.764 KST [21712] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-01 15:34:46.009 KST [20944] LOG:  background worker "logical replication launcher" (PID 2404) was terminated by exception 0xC000013A
+2025-02-01 15:34:46.009 KST [20944] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-02-01 15:34:46.009 KST [20944] LOG:  terminating any other active server processes
+2025-02-01 15:34:46.012 KST [20944] LOG:  all server processes terminated; reinitializing
+2025-02-01 15:34:46.022 KST [20944] LOG:  startup process (PID 7420) was terminated by exception 0xC0000142
+2025-02-01 15:34:46.022 KST [20944] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-02-01 15:34:46.022 KST [20944] LOG:  aborting startup due to startup process failure
+2025-02-01 15:34:46.023 KST [20944] LOG:  database system is shut down
+2025-02-03 12:44:41.461 KST [13696] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2025-02-03 12:44:41.463 KST [13696] LOG:  listening on IPv6 address "::1", port 5432
+2025-02-03 12:44:41.463 KST [13696] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-02-03 12:44:41.483 KST [13960] LOG:  database system was interrupted; last known up at 2025-02-01 15:14:07 KST
+2025-02-03 12:44:42.486 KST [13960] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-02-03 12:44:42.491 KST [13960] LOG:  redo starts at 0/21CD610
+2025-02-03 12:44:42.491 KST [13960] LOG:  invalid record length at 0/21CD6F8: expected at least 24, got 0
+2025-02-03 12:44:42.491 KST [13960] LOG:  redo done at 0/21CD6C0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-02-03 12:44:42.496 KST [14024] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-02-03 12:44:42.510 KST [14024] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.004 s, total=0.016 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/21CD6F8, redo lsn=0/21CD6F8
+2025-02-03 12:44:42.519 KST [13696] LOG:  database system is ready to accept connections
+2025-02-03 12:44:56.738 KST [16544] ERROR:  syntax error at or near "참고만" at character 27
+2025-02-03 12:44:56.738 KST [16544] STATEMENT:  SELECT DISTINCT 노출유형 (지금은 참고만 할것) FROM ChatTable20250123;
+2025-02-03 13:42:45.130 KST [13696] LOG:  background worker "logical replication launcher" (PID 20584) was terminated by exception 0xC000013A
+2025-02-03 13:42:45.130 KST [13696] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-02-03 13:42:45.130 KST [13696] LOG:  terminating any other active server processes
+2025-02-03 13:42:45.133 KST [13696] LOG:  all server processes terminated; reinitializing
+2025-02-03 13:42:45.143 KST [13696] LOG:  startup process (PID 20616) was terminated by exception 0xC0000142
+2025-02-03 13:42:45.143 KST [13696] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-02-03 13:42:45.143 KST [13696] LOG:  aborting startup due to startup process failure
+2025-02-03 13:42:45.144 KST [13696] LOG:  database system is shut down
+2025-02-12 10:40:51.649 KST [27232] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2025-02-12 10:40:51.651 KST [27232] LOG:  listening on IPv6 address "::1", port 5432
+2025-02-12 10:40:51.651 KST [27232] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-02-12 10:40:51.674 KST [27216] LOG:  database system was interrupted; last known up at 2025-02-03 12:44:42 KST
+2025-02-12 10:40:52.614 KST [27216] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-02-12 10:40:52.618 KST [27216] LOG:  redo starts at 0/21CD770
+2025-02-12 10:40:52.618 KST [27216] LOG:  invalid record length at 0/21CD7A8: expected at least 24, got 0
+2025-02-12 10:40:52.618 KST [27216] LOG:  redo done at 0/21CD770 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-02-12 10:40:52.622 KST [27008] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-02-12 10:40:52.636 KST [27008] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.003 s, total=0.016 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/21CD7A8, redo lsn=0/21CD7A8
+2025-02-12 10:40:52.645 KST [27232] LOG:  database system is ready to accept connections
+2025-02-12 10:45:52.636 KST [27008] LOG:  checkpoint starting: time
+2025-02-12 10:46:22.268 KST [27008] LOG:  checkpoint complete: wrote 282 buffers (1.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=29.547 s, sync=0.063 s, total=29.632 s; sync files=34, longest=0.006 s, average=0.002 s; distance=2054 kB, estimate=2054 kB; lsn=0/23CF350, redo lsn=0/23CF318
+2025-02-12 11:33:05.938 KST [27232] LOG:  background worker "logical replication launcher" (PID 27352) was terminated by exception 0xC000013A
+2025-02-12 11:33:05.938 KST [27232] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-02-12 11:33:05.938 KST [27232] LOG:  terminating any other active server processes
+2025-02-12 11:33:05.942 KST [27232] LOG:  all server processes terminated; reinitializing
+2025-02-12 11:33:05.953 KST [27232] LOG:  startup process (PID 25892) was terminated by exception 0xC0000142
+2025-02-12 11:33:05.953 KST [27232] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-02-12 11:33:05.953 KST [27232] LOG:  aborting startup due to startup process failure
+2025-02-12 11:33:05.953 KST [27232] LOG:  database system is shut down

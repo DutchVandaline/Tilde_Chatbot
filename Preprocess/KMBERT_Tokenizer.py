@@ -9,8 +9,8 @@ kmbert_tokenizer = AutoTokenizer.from_pretrained("snunlp/KR-Medium", do_lower_ca
 # Parameters
 max_seq_len = 256
 stride = 128
-input_dir = "C:/junha/Datasets/ChatData_Processed/"
-output_dir = "C:/junha/Datasets/ChatData_Tokenized/"
+input_dir = "C:/junha/Datasets/ChatData20250123_Processed/"
+output_dir = "C:/junha/Datasets/ChatData20250123_Tokenized/"
 
 os.makedirs(output_dir, exist_ok=True)
 

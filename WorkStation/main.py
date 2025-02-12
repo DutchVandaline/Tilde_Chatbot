@@ -9,7 +9,7 @@ from tqdm.auto import tqdm
 from torch.utils.data import DataLoader
 from sklearn.metrics import f1_score
 from WorkStation.Train_Dataset import PreprocessedDataset
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, BertForSequenceClassification
 
 from WorkStation.model import TextViT
 from LSTM import LSTMClassifier
@@ -42,13 +42,15 @@ def main():
 
     print("DataLoader Process Completed")
 
-    #model = TextViT(vocab_size=vocab_size, max_seq_len=max_seq_len, num_classes=num_classes).to(device)
-    model = LSTMClassifier(vocab_size=vocab_size,
-                                embedding_dim=embedding_dim,
-                                hidden_dim=hidden_dim,
-                                output_dim=num_classes,
-                                num_layers=num_layers,
-                                dropout=0.5).to(device)
+    # model = LSTMClassifier(vocab_size=vocab_size,
+    #                             embedding_dim=embedding_dim,
+    #                             hidden_dim=hidden_dim,
+    #                             output_dim=num_classes,
+    #                             num_layers=num_layers,
+    #                             dropout=0.5).to(device)
+    model = AutoModelForSequenceClassification.from_pretrained(
+        "/home/idal/km-bert", num_labels=num_classes
+    ).to(device)
     loss_fn = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 

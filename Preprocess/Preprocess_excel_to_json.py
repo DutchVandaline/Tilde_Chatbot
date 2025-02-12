@@ -17,7 +17,7 @@ class_name_mapping = {
 }
 
 # 엑셀 파일 읽기
-file_path = 'C:/junha/Datasets/filtered_excel_file.xlsx'
+file_path = 'C:/junha/Datasets/20250123Chatdata.xlsx'
 df = pd.read_excel(file_path)
 
 # 필요한 컬럼 선택
@@ -28,7 +28,7 @@ df_filtered = df[columns_to_keep]
 df_filtered = df_filtered.sort_values(by='노출제품유형')
 
 # Train, Test 폴더 생성
-output_base_dir = 'C:/junha/Datasets/ChatData_Processed/'
+output_base_dir = 'C:/junha/Datasets/ChatData20250123_Processed/'
 train_dir = os.path.join(output_base_dir, 'Train')
 test_dir = os.path.join(output_base_dir, 'Test')
 os.makedirs(train_dir, exist_ok=True)
