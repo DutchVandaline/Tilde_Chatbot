@@ -405,3 +405,30 @@
 2025-02-12 11:33:05.953 KST [27232] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
 2025-02-12 11:33:05.953 KST [27232] LOG:  aborting startup due to startup process failure
 2025-02-12 11:33:05.953 KST [27232] LOG:  database system is shut down
+2025-02-13 17:11:38.542 KST [13984] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2025-02-13 17:11:38.543 KST [13984] LOG:  listening on IPv6 address "::1", port 5432
+2025-02-13 17:11:38.543 KST [13984] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-02-13 17:11:38.563 KST [16968] LOG:  database system was interrupted; last known up at 2025-02-12 10:46:22 KST
+2025-02-13 17:11:39.596 KST [16968] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-02-13 17:11:39.600 KST [16968] LOG:  redo starts at 0/23CF318
+2025-02-13 17:11:39.601 KST [16968] LOG:  invalid record length at 0/23CF400: expected at least 24, got 0
+2025-02-13 17:11:39.601 KST [16968] LOG:  redo done at 0/23CF3C8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-02-13 17:11:39.604 KST [5536] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-02-13 17:11:39.618 KST [5536] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.004 s, total=0.016 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/23CF400, redo lsn=0/23CF400
+2025-02-13 17:11:39.626 KST [13984] LOG:  database system is ready to accept connections
+2025-02-13 17:19:55.247 KST [13984] LOG:  background worker "logical replication launcher" (PID 7064) was terminated by exception 0xC000013A
+2025-02-13 17:19:55.247 KST [13984] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2025-02-13 17:19:55.247 KST [13984] LOG:  terminating any other active server processes
+2025-02-13 17:19:55.249 KST [13984] LOG:  received fast shutdown request
+^C2025-02-17 11:25:04.487 KST [4024] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1929, 64-bit
+2025-02-17 11:25:04.489 KST [4024] LOG:  listening on IPv6 address "::1", port 5432
+2025-02-17 11:25:04.489 KST [4024] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-02-17 11:25:04.513 KST [2904] LOG:  database system was interrupted; last known up at 2025-02-13 17:11:39 KST
+2025-02-17 11:25:05.597 KST [2904] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-02-17 11:25:05.601 KST [2904] LOG:  redo starts at 0/23CF478
+2025-02-17 11:25:05.601 KST [2904] LOG:  invalid record length at 0/23CF4B0: expected at least 24, got 0
+2025-02-17 11:25:05.601 KST [2904] LOG:  redo done at 0/23CF478 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-02-17 11:25:05.604 KST [17380] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-02-17 11:25:05.617 KST [17380] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.003 s, total=0.015 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/23CF4B0, redo lsn=0/23CF4B0
+2025-02-17 11:25:05.626 KST [4024] LOG:  database system is ready to accept connections
+2025-02-17 13:07:49.224 KST [4024] LOG:  received fast shutdown request

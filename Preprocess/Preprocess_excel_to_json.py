@@ -5,19 +5,14 @@ from sklearn.model_selection import train_test_split
 
 # 한글 클래스 이름과 영어 태그 매핑
 class_name_mapping = {
-    '독성있는동식물': 'toxic_plants_and_animals',
-    '중독성식품': 'toxic_food',
-    '농약': 'pesticides',
-    '중금속': 'heavy_metals',
-    '의약품': 'pharmaceuticals',
-    '이물질섭취': 'foreign_object_ingestion',
-    '공업용화학제품': 'industrial_chemicals',
-    '생활화학제품': 'household_chemicals',
-    '유해가스': 'harmful_gases'
+    '생물독성': 'animal_toxic',
+    '화학독성': 'chemi_toxic',
+    '생활독성': 'life_toxic',
+    '환경독성': 'env_toxic',
 }
 
 # 엑셀 파일 읽기
-file_path = 'C:/junha/Datasets/20250123Chatdata.xlsx'
+file_path = 'C:/junha/Datasets/20250212Chatdata.xlsx'
 df = pd.read_excel(file_path)
 
 # 필요한 컬럼 선택
