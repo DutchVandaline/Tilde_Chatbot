@@ -1,6 +1,6 @@
 import nbformat
 
-notebook_path = "C:/junha/Tilde_Chatbot/Tilde_Chatbot.ipynb"
+notebook_path = "/Tilde_Chatbot_DB.ipynb"
 
 with open(notebook_path, "r", encoding="utf-8") as f:
     notebook = nbformat.read(f, as_version=4)

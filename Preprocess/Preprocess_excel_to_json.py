@@ -3,44 +3,32 @@ import json
 import os
 from sklearn.model_selection import train_test_split
 
-# 한글 클래스 이름과 영어 태그 매핑
 class_name_mapping = {
-    '생물독성': 'animal_toxic',
-    '화학독성': 'chemi_toxic',
-    '생활독성': 'life_toxic',
-    '환경독성': 'env_toxic',
+    '생활화학제품': 'life',
+    '의약품': 'medical',
+    '농약': 'pesticide',
+    '기타': 'etc',
 }
 
-# 엑셀 파일 읽기
-file_path = 'C:/junha/Datasets/20250212Chatdata.xlsx'
+file_path = 'C:/junha/Datasets/excel_with_type.xlsx'
 df = pd.read_excel(file_path)
 
-# 필요한 컬럼 선택
 columns_to_keep = ['질문수정', '노출제품유형']
 df_filtered = df[columns_to_keep]
-
-# 'class' 값 기준으로 정렬
 df_filtered = df_filtered.sort_values(by='노출제품유형')
 
-# Train, Test 폴더 생성
-output_base_dir = 'C:/junha/Datasets/ChatData20250123_Processed/'
+output_base_dir = 'C:/junha/Datasets/20250123Modified/'
 train_dir = os.path.join(output_base_dir, 'Train')
 test_dir = os.path.join(output_base_dir, 'Test')
 os.makedirs(train_dir, exist_ok=True)
 os.makedirs(test_dir, exist_ok=True)
 
-# 각 class별로 데이터를 분리하고 8:2 비율로 나누기
 classes = df_filtered['노출제품유형'].unique()
 for class_name in classes:
     class_data = df_filtered[df_filtered['노출제품유형'] == class_name]
-
-    # Train-Test split (8:2 비율)
     train_data, test_data = train_test_split(class_data, test_size=0.2, random_state=42)
-
-    # 영어 태그로 폴더 이름 설정
     english_class_name = class_name_mapping[class_name]
 
-    # 각 class 폴더 생성
     train_class_dir = os.path.join(train_dir, english_class_name)
     test_class_dir = os.path.join(test_dir, english_class_name)
     os.makedirs(train_class_dir, exist_ok=True)
