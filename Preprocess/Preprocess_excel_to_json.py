@@ -10,14 +10,14 @@ class_name_mapping = {
     '기타': 'etc',
 }
 
-file_path = 'C:/junha/Datasets/excel_with_type.xlsx'
+file_path = r"C:\junha\Datasets\Tilde_Chatbot\20250124_Chatdata.xlsx"
 df = pd.read_excel(file_path)
 
 columns_to_keep = ['질문수정', '노출제품유형']
 df_filtered = df[columns_to_keep]
 df_filtered = df_filtered.sort_values(by='노출제품유형')
 
-output_base_dir = 'C:/junha/Datasets/20250123Modified/'
+output_base_dir = 'C:/junha/Datasets/20250124Modified/'
 train_dir = os.path.join(output_base_dir, 'Train')
 test_dir = os.path.join(output_base_dir, 'Test')
 os.makedirs(train_dir, exist_ok=True)
@@ -34,7 +34,6 @@ for class_name in classes:
     os.makedirs(train_class_dir, exist_ok=True)
     os.makedirs(test_class_dir, exist_ok=True)
 
-    # Train 데이터 저장
     for index, row in train_data.iterrows():
         entry = {
             "modifiedquery": row['질문수정']
@@ -43,7 +42,6 @@ for class_name in classes:
         with open(file_name, 'w', encoding='utf-8') as f:
             json.dump(entry, f, ensure_ascii=False, indent=4)
 
-    # Test 데이터 저장
     for index, row in test_data.iterrows():
         entry = {
             "modifiedquery": row['질문수정']
@@ -52,4 +50,4 @@ for class_name in classes:
         with open(file_name, 'w', encoding='utf-8') as f:
             json.dump(entry, f, ensure_ascii=False, indent=4)
 
-print(f"Train, Test 폴더가 '{output_base_dir}'에 생성되었고, 각 폴더 아래에 9개의 class 폴더가 생성되었습니다.")
+print(f"Train, Test 폴더가 '{output_base_dir}'에 생성되었고, 각 폴더 아래에 4개의 class 폴더가 생성되었습니다.")

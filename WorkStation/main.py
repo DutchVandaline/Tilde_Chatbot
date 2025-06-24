@@ -33,7 +33,7 @@ def main():
     kmbert_tokenizer = AutoTokenizer.from_pretrained("/home/idal/km-bert", do_lower_case=False)
     vocab_size = kmbert_tokenizer.vocab_size
 
-    # Dataset and DataLoader
+    # 4Class_Dataset and DataLoader
     train_dataset = PreprocessedDataset(os.path.join(root_dir, "Train"))
     test_dataset = PreprocessedDataset(os.path.join(root_dir, "Test"))
 
